@@ -1,0 +1,93 @@
+.card {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 9px;
+    margin: 8px;
+    padding: 20px 30px;
+    box-shadow: 0px 3px blueviolet;
+    overflow:hidden;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 15px blueviolet;
+}
+
+.card-address {
+    overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 780px) {
+    .card-address {
+        inline-size: 100%;
+        overflow-wrap: break-word;
+    }
+}
+
+.card span img {
+    width: 20px;
+    vertical-align: middle;
+    padding-left: 3px;
+}
+
+/* .card-button {
+    padding: 10px 20px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+} */
+
+.card-button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.card-button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.card-button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.card-button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 400px) {
+    .card-button {
+        margin: auto;
+        margin-top: 15px;
+        width: 100%;
+    }
+}

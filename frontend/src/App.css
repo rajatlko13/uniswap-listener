@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Work+Sans:wght@700;900&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.App h1 {
+  font-family: 'Work Sans', sans-serif;
+  color: rgb(53, 34, 34);
+}
